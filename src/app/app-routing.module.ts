@@ -14,7 +14,27 @@ const routes: Routes = [
   {
     path: 'ron-bugado',
     loadChildren: () => import('./ron-bugado/ron-bugado.module').then( m => m.RonBugadoPageModule)
+  },  {
+    path: 'luca',
+    loadChildren: () => import('./luca/luca.module').then( m => m.LucaPageModule)
   },
+  {
+    path: 'encanto',
+    loadChildren: () => import('./encanto/encanto.module').then( m => m.EncantoPageModule)
+  },
+  {
+    path: 'red-crescer',
+    loadChildren: () => import('./red-crescer/red-crescer.module').then( m => m.RedCrescerPageModule)
+  },
+  {
+    path: 'toy4',
+    loadChildren: () => import('./toy4/toy4.module').then( m => m.Toy4PageModule)
+  },
+  {
+    path: 'wifi-ralph',
+    loadChildren: () => import('./wifi-ralph/wifi-ralph.module').then( m => m.WifiRalphPageModule)
+  },
+
 ];
 
 @NgModule({
